@@ -39,3 +39,10 @@ body{
   #history a:not(.collapsed):after {
     content: '- Show Less';
   }
+
+  .custFoot a{
+      color: #fff;
+  }
+  .copyright{
+      color: green;
+  }
