@@ -1,0 +1,41 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gradient {
+    background: #81c764;
+}
+
+.dropdown-item{
+    color: #81c764;
+}
+
+.vision{
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+
+#history, #branches {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: green;
+  }
+  
+#history #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+  
+  #history #collapseExample.collapsing {
+    height: 3rem;
+  }
+  
+  #history a.collapsed:after {
+    content: '+ Show More';
+  }
+  
+  #history a:not(.collapsed):after {
+    content: '- Show Less';
+  }
