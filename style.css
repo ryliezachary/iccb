@@ -2,6 +2,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,255);
+}
 .gradient {
     background: #81c764;
 }
