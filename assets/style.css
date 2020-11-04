@@ -10,7 +10,7 @@ body{
 }
 
 .dropdown-item{
-    color: #81c764;
+    color:rgba(0,0,0,.5);
 }
 
 .vision{
@@ -19,12 +19,12 @@ body{
 }
 
 
-#branches {
+/* #branches {
     font-size: 1rem;
     line-height: 1.5;
     color: green;
   }
-  
+   */
 #history #collapseExample.collapse:not(.show) {
     display: block;
     height: 3rem;
