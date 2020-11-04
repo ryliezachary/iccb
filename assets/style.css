@@ -44,10 +44,7 @@ body{
   }
 
   .custFoot a{
-      color: #fff;
-  }
-  .copyright{
-      color: green;
+	color:rgba(0,0,0,.5);
   }
 
   .slideshow-item {
