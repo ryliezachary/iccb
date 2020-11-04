@@ -19,7 +19,7 @@ body{
 }
 
 
-#history, #branches {
+#branches {
     font-size: 1rem;
     line-height: 1.5;
     color: green;
@@ -51,7 +51,7 @@ body{
   }
 
   .slideshow-item {
-    height: 479px;
+    height: 515px;
   }
 
   .map-responsive{
