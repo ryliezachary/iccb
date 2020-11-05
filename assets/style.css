@@ -27,12 +27,12 @@ body{
    */
 #history #collapseExample.collapse:not(.show) {
     display: block;
-    height: 3rem;
+    height: 5rem;
     overflow: hidden;
 }
   
   #history #collapseExample.collapsing {
-    height: 3rem;
+    height: 5rem;
   }
   
   #history a.collapsed:after {
