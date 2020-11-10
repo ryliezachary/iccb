@@ -17,8 +17,8 @@ html,body{
     color:rgba(0,0,0,.5);
 }
 
-.vision{
-    color: #fff;
+.vision, .services{
+    color: #406332;
     line-height: 1.5rem;
 }
 
@@ -65,7 +65,7 @@ html,body{
   .map-responsive iframe{
     left:0;
     top:0;
-    height:100%;
+    height:70%;
     width:100%;
     position:absolute;
   }
@@ -724,4 +724,28 @@ h1.heading {
   padding:10px;
   font-weight:600;
   text-transform: uppercase
+}
+
+/* PARALLAX */
+
+.parallax {
+	/* The image used */
+	background-image: url('/img/parallax_bg.jpg');
+  
+	/* Full height */
+	height: 100%; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+  
+
+.bg-blue-image {
+    background: url('https://www.solodev.com/_/images/bg-blue-image-small.png');
+    background-attachment: fixed;
+	position:relative!important;
 }
