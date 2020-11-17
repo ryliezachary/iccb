@@ -1,0 +1,243 @@
+body {
+    margin-top: 1rem;
+  }
+  ul {
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .filtr-item {
+    padding: 1rem;
+  }
+  .filtr-container {
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .item-desc {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .wrp-select {
+    display: none;
+  }
+  
+  /* Filter controls */
+  .simplefilter li {
+    color: #62a6e7;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    border: 2px solid #62a6e7;
+    transition: all 0.25s;
+  }
+  .simplefilter li.active {
+    color: #fff;
+    background-color: #62a6e7;
+  }
+  
+  /* Search control */
+  .filtr-search {
+    padding: 0 10px;
+    text-transform: uppercase;
+    border: 2px solid #62a6e7;
+    border-radius: 25px;
+    height: 35px;
+  }
+  .filtr-search:focus {
+    outline: none;
+  }
+  
+  .filtr-item {
+    height: 200px;
+  }
+  
+  .filtr-i {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 1024px) {
+    .first-block {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 50px;
+    }
+    .row {
+      display: none;
+    }
+    .search-row {
+      display: inline-flex;
+      width: 80%;
+      height: 35px;
+  
+      .filtr-search {
+        width: 100%;
+      }
+    }
+    .wrp-select {
+      display: inline-flex;
+      width: 40%;
+      max-width: 400px;
+      height: 35px;
+      overflow: hidden;
+      background-color: #fff;
+      position: relative;
+      border: 2px solid #62a6e7;
+      border-radius: 50px;
+  
+      select {
+        background: transparent;
+        text-transform: uppercase;
+        -webkit-appearance: none;
+        border: 0;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 0 10px;
+        color: #000;
+        width: 110%;
+        line-height: 35px;
+        height: 35px;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      i {
+        margin: 7.5px 10px 0 0;
+        color: #62a6e7;
+      }
+  
+      // &:after {
+      //   content: "";
+      //   height: 0;
+      //   width: 0;
+      //   position: absolute;
+      //   right: 3%;
+      //   top: 50%;
+      //   margin-top: -2px;
+      //   border-top: 4px solid #000;
+      //   border-left: 4px solid transparent;
+      //   border-right: 4px solid transparent;
+      //   font-size: 0;
+      //   pointer-events: none;
+      // }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .first-block {
+      flex-direction: column;
+    }
+    .filtr-item {
+      height: 150px;
+    }
+    .search-row {
+      display: flex;
+      width: 80%;
+      margin-top: 5px;
+    }
+    .wrp-select {
+      display: flex;
+      width: 80%;
+    }
+  }
+  
+  /* images */
+  
+  .i-1 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Ned_Stark-Sean_Bean.jpg/220px-Ned_Stark-Sean_Bean.jpg");
+  }
+  
+  .i-2 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Robb_Stark-Richard_Madden.jpg/220px-Robb_Stark-Richard_Madden.jpg");
+  }
+  
+  .i-3 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/7/74/SophieTurnerasSansaStark.jpg/220px-SophieTurnerasSansaStark.jpg");
+  }
+  
+  .i-4 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Arya_Stark-Maisie_Williams.jpg/220px-Arya_Stark-Maisie_Williams.jpg");
+  }
+  
+  .i-5 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Promotional_photo_of_%28%28Isaac_Hempstead-Wright%29%29_as_%28%28Bran_Stark%29%29_on_%28%28Game_of_Thrones%29%29.jpeg/220px-Promotional_photo_of_%28%28Isaac_Hempstead-Wright%29%29_as_%28%28Bran_Stark%29%29_on_%28%28Game_of_Thrones%29%29.jpeg");
+  }
+  
+  .i-6 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Jon_Snow-Kit_Harington.jpg/220px-Jon_Snow-Kit_Harington.jpg");
+  }
+  
+  .i-7 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Tywin_Lannister-Charles_Dance.jpg/220px-Tywin_Lannister-Charles_Dance.jpg");
+  }
+  
+  .i-8 {
+    background-image: url("http://vignette2.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/0/09/Kevan_Lannister.jpg/revision/latest/scale-to-width-down/265?cb=20160511141011&path-prefix=fr");
+  }
+  
+  .i-9 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Tyrion_Lannister-Peter_Dinklage.jpg/220px-Tyrion_Lannister-Peter_Dinklage.jpg");
+  }
+  
+  .i-10 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/JaimeLannister.jpg/220px-JaimeLannister.jpg");
+  }
+  
+  .i-11 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Queencersei.jpg/220px-Queencersei.jpg");
+  }
+  
+  .i-12 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Robert_Baratheon-Mark_Addy.jpg/220px-Robert_Baratheon-Mark_Addy.jpg");
+  }
+  
+  .i-13 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Stannis_Baratheon-Stephen_Dillane.jpg/220px-Stannis_Baratheon-Stephen_Dillane.jpg");
+  }
+  
+  .i-14 {
+    background-image: url("http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/renly-baratheon-1920.jpg");
+  }
+  
+  .i-15 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Joffrey_Baratheon-Jack_Gleeson.jpg/220px-Joffrey_Baratheon-Jack_Gleeson.jpg");
+  }
+  
+  .i-16 {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/236x/ed/6f/a4/ed6fa45fa362a6053b361b6c4d24030d.jpg");
+  }
+  
+  .i-17 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Tommen_Baratheon-Dean-Charles_Chapman.jpg/220px-Tommen_Baratheon-Dean-Charles_Chapman.jpg");
+  }
+  
+  .i-18 {
+    background-image: url("https://sfshibao.s3-us-west-2.amazonaws.com/wp-content/uploads/2015/04/14062034/11108951_10152734447146765_3033302979900648324_n-360x240.png");
+  }
+  
+  .i-19 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Viserys_Targaryen-Harry_Lloyd.png/220px-Viserys_Targaryen-Harry_Lloyd.png");
+  }
+  

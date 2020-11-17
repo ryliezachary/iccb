@@ -3,51 +3,197 @@
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!--Let browser know website is optimized for mobile-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+    <!--Let browser know website is optimized for mobile-->
+    
+    <link rel="stylesheet" href="assets/style.css">
+    <title>ICCB|Employees</title>
+   
   </head>
 <style>
-  img{
-      height: 650px;
-  }
+
 </style>
   <body>
-    <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="img/employees/1.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/2.JPG class="responsive-img""></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/3.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/4.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/5.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/6.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/7.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/8.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/9.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/10.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/11.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/12.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/13.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/14.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/15.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/16.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/17.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/18.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/19.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/20.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/21.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/22.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/23.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/24.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/25.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/26.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/27.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/28.JPG" class="responsive-img"></a>
-        <a class="carousel-item" href="#one!"><img src="img/employees/29.JPG" class="responsive-img"></a>
-      </div>
-        
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light gradient sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://ryliezachary.github.io/iccb/index.html"><img src="https://ryliezachary.github.io/iccb/img/logo.png" alt="Logo" height="120px" width="340px" class="img-responsive"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
+        <ul class="navbar-nav font-weight-bolder">
+            <li class="nav-item pr-1">
+                <a href="https://ryliezachary.github.io/iccb/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown pr-1">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dpAboutUs">About Us</a>
+                <span class="caret"></span>
+                <div class="dropdown-menu" aria-labelledby="dpAboutUs">
+                    <a href="https://ryliezachary.github.io/iccb/history.html" class="dropdown-item">History</a>
+                    <a href="https://ryliezachary.github.io/iccb/vision.html" class="dropdown-item">Vision and Mission</a>
+                    <a href="#" class="dropdown-item">Leaderships and Staffs</a>
+                    <a href="#" class="dropdown-item">Annual Report 2018</a>
+                    <a href="#" class="dropdown-item">Annual Report 2019</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown pr-1">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dpServices">Services</a>
+                <span class="caret"></span>
+                <div class="dropdown-menu" aria-labelledby="dpServices">
+                
+                    <!-- DEPOSITS -->
+                    <div class="dropdown dropright">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" data-target="#dpDeposits">
+                            Deposits
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="dpDeposits">
+                                <a href="#" class="dropdown-item">Savings Account</a>
+                                <a href="#" class="dropdown-item">Time Deposit</a>
+                             </div>
+                       </div>
+
+                    <!-- LOANS -->
+                    <div class="dropdown dropright">
+                        <a class="dropdown-toggle dropdown-item" data-toggle="dropdown" data-target="#dpLoans">
+                            Loans
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="dpLoans">
+                                <a href="https://ryliezachary.github.io/iccb/loans/agriculture.html" class="dropdown-item"> Agriculture Loan</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/commercial.html" class="dropdown-item">Commercial Loan</a>
+                                <a href="#" class="dropdown-item">Facility Loan</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/industrial.html" class="dropdown-item">Industrial Loan</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/other.html" class="dropdown-item">Other Loans</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/housing.html" class="dropdown-item">Housing</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/housing.html" class="dropdown-item">House Improvement</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/housing.html" class="dropdown-item">Purchase of Lots</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/salary.html" class="dropdown-item">Salary</a>
+                                <a href="#" class="dropdown-item">Back to Back</a>
+                                <a href="https://ryliezachary.github.io/iccb/loans/ofw.html" class="dropdown-item">OFW</a>
+                            </div>
+                       </div>
+                    
+                </div>
+            </li>
+            <li class="nav-item pr-1">
+                <a href="https://ryliezachary.github.io/iccb/branches.html" class="nav-link">Branches</a>
+            </li>
+            <li class="nav-item pr-1">
+                <a href="https://ryliezachary.github.io/iccb/contactus.html" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/employees/1.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/2.jpg class="responsive-img""></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/3.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/4.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/5.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/6.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/7.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/8.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/9.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/10.png" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/11.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/12.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/13.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/14.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/15.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/16.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/17.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/18.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/19.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/20.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/21.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/22.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/23.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/24.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/25.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/26.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/27.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/28.jpg" class="responsive-img"></a>
+                <a class="carousel-item" href="#one!"><img src="img/employees/29.jpg" class="responsive-img"></a>
+              </div>
+
+      <footer class="page-footer gradient">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+                <div class="col-md-12 text-center pt-4">
+                    <a href="#" class="white-text">
+                        <a href="https://www.facebook.com/Ilocos-Consolidated-Cooperative-Bank-Main-Office-239225449831807">
+                            <i class="fab fa-facebook-f fa-3x mr-4"></i>
+                        </a>
+                        <a href="#"><i class="fab fa-twitter fa-3x mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-3x mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in fa-3x mr-4"></i></a>
+                      </a>
+                </div>
+            </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5 custFoot">
+        <div class="row">
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Member of</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px"><br>
+                <img src="https://ryliezachary.github.io/iccb/img/cyberbrand.png" alt="Cyberbrand" class="mt-2 mb-4 img-responsive"><br>
+                <img src="https://ryliezachary.github.io/iccb/img/pdic.png" alt="PDIC" class="mt-2 mb-4 img-responsive">
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="https://ryliezachary.github.io/iccb/index.html">Home</a></li>        
+                        <li class="my-2"><a href="https://ryliezachary.github.io/iccb/history.html">About Us</a></li>
+                        <li class="my-2"><a href="https://ryliezachary.github.io/iccb/branches.html">Branches</a></li>         
+                        <li class="my-2"><a href="https://ryliezachary.github.io/iccb/contactus.html">Contact Us</a></li>        
+                    </ul>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Services</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+                <ul class="list-unstyled">
+                     <!-- DEPOSITS -->
+                     <li class="my-2"><a href="#">Deposits</a></li> 
+
+                    <!-- LOANS -->
+                    <li class="my-2"><a href="https://ryliezachary.github.io/iccb/loans/loans.html">Loans</a></li> 
+                </ul>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+                <p class="mt-2">
+                    <strong>Corporate Office</strong>
+                </p>
+                <p class="mt-2">
+                    <span><strong>Address: </strong></span><br>Brgy. Bagani Campo, Candon City, Ilocos Sur
+                </p>
+                <p class="mt-2">
+                    <span><strong>Telephone No.: </strong></span><br>(077) 674-0357 / (077) 674-0312
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="text-center pt-3 copyright">
+    <p class="flow-text">Copyright &copy; 2020 ICCB - All Rights Reserved.</p>
+    </footer>
+   
 
     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
