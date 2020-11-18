@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+    
+    <title>Ilocos Consolidated Cooperative Bank</title>
+</head>
+<style>
+  body{
+    background: #f8faff;
+    font-size: 10px;
+    position:relative;
+    overflow-x:hidden;
+  }
+h2{
+  font-weight:700;
+  margin: 0 0 20px;
+}
+ul{
+  margin:0;
+  list-style-type: none;
+}
+#filter-list{
+  display: inline-block;
+  border:1px solid #dddddd;
+  border-radius: 30px;
+  padding:4px;
+  margin:0 0 60px;
+}
+#filter-list li{
+  display: inline-block;
+  font-size: 10px;
+  color: #888888;
+  line-height: 50px;
+  text-align: center;
+  border-radius:25px;
+  font-weight: 500;
+  padding: 0 20px;
+  min-width: 130px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0.5em;
+}
+#filter-list li.active,
+#filter-list li.hover{
+  background-color:#81c764;
+  color: #406332;
+}
+.gallery-outer{
+  width: 100%;
+  float: left;
+  height: auto;
+  padding: 0 1px;
+}
+.gallery-items li{
+  width: 25%;
+  float: left;
+  padding: 0 1px 2px;
+}
+.gallery-items li img{
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-inner{
+  width: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-overlay{
+  width: 100%;
+  position: absolute;
+  left:0;
+  top: 50%;
+  text-align: center;
+  -webkit-transform:translateY(-50%) scale(0);
+  -ms-transform:translateY(-50%) scale(0);
+  -moz-transform:translateY(-50%) scale(0);
+  transform:translateY(-50%) scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-overlay a{
+  width: 60px;
+  line-height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  color: #53bff0;
+  font-size: 16px;
+
+}
+.gallery-overlay a:hover{
+  background: #53bff0;
+  color:#fff;
+}
+.gallery-items li:hover .gallery-overlay{
+  -webkit-transform:translateY(-50%) scale(1);
+  -ms-transform:translateY(-50%) scale(1);
+  -moz-transform:translateY(-50%) scale(1);
+  transform:translateY(-50%) scale(1);
+}
+.gallery-items li:hover img{
+  -webkit-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  transform:scale(1.2);
+}
+</style>
+<body>
+
+  <section class="section-spacing bottom-none inverse-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title text-center">
+            <h2><span>Gallery</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul id="filter-list">
+            <li class="filter active" data-filter="all">ALL</li>
+            <li class="filter active" data-filter="1">ACCOUNTING</li>
+            <li class="filter active" data-filter="compliance">COMPLIANCE</li>
+            <li class="filter active" data-filter="corpo">CORPORATE OFFICE</li>
+            <li class="filter active" data-filter="corposec">CORPORATE SECTION</li>
+            <li class="filter active" data-filter="credit">CREDIT</li>
+            <li class="filter active" data-filter="head">HEAD OFFICE</li>
+            <li class="filter active" data-filter="hr">HR DEPT</li>
+            <li class="filter active" data-filter="it">IT DEPT</li>
+            <li class="filter active" data-filter="poffice">P. OFFICE</li>
+            <li class="filter active" data-filter="random">RANDOM</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gallery-outer">
+      <ul class="gallery-items" style="padding:0px;position:relative;height: 1261px;" >
+        <li class="filtr-item" data-category="compliance" style="opacity:1; transform: scale(1) translate3d(0px,0px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/1.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/1.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="1" style="opacity:1; transform: scale(1) translate3d(315.25px,0px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/2.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/2.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="1" style="opacity:1; transform: scale(1) translate3d(630.5px,0px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/3.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/3.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="1" style="opacity:1; transform: scale(1) translate3d(945.7px,0px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/4.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/4.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="corpo" style="opacity:1; transform: scale(1) translate3d(0px,315.25px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/5.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/5.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="filtr-item" data-category="corpo" style="opacity:1; transform: scale(1) translate3d(315.25px,315.25px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/6.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/6.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="corposec" style="opacity:1; transform: scale(1) translate3d(630.5px,315.25px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/7.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/7.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="corposec" style="opacity:1; transform: scale(1) translate3d(945.7px,315.25px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/8.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/8.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(0px,630.5px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/9.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/9.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(315.25px,630.5px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/10.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/10.png" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(630.5px,630.5px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/11.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/11.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(945.7px,630.5px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/12.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/12.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(0px,945.7px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/13.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/13.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(315.25px,945.7px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/14.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/14.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="filtr-item" data-category="accounting" style="opacity:1; transform: scale(1) translate3d(630.5px,945.7px,0px);backface-visibility:hidden;perspective:1000px;transform-style:preserver-3d;position:absolute; transition: all 0.5s ease-in-out 0ms;pointer-events:auto;">
+          <div class="gallery-inner">
+            <img src="img/employees/15.jpg" alt="">
+            <div class="gallery-overlay">
+              <a href="img/employees/15.jpg" class="venobox vbox-item" data-gall="gallery">
+              <i class="fas fa-images"></i>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+<script type="text/javascript" src="assets/jquery.filterizr.min.js"></script>
+
+ <script>
+    $(function () {
+        $('.filter').filterizr();
+    });
+    $('.filter-container').filterizr('filter', 5);
+</script>
+
+</body>
+</html>
