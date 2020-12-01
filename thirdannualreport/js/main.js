@@ -1,4 +1,4 @@
-const url = './docs/thirdannual.pdf';
+const url = 'https://ryliezachary.github.io/iccb/thirdannualreport/docs/thirdannual.pdf';
 
 let pdfDoc = null,
   pageNum = 1,
