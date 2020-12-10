@@ -894,4 +894,9 @@ nav li a:active{
 	border-bottom: 3px solid #406332;
 	padding: 6px 0; 
   }
+
+  nav li a:active {
+	color: #00000080;
+  }
+  
   
