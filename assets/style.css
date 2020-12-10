@@ -874,6 +874,24 @@ h1.heading {
     min-height: 250px;
 }
 
-.nav-link:focus, .nav-link:hover {
-    text-decoration: underline;
-}
+nav li a:active{
+	color: #00000080;
+  }
+
+  nav li a {
+	transition: 0.3s ease;
+	color: #406332;
+	font-size: 20px;
+	text-decoration: none;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	padding: 20px 0;
+	margin: 0 5px;
+	font-size: 17px;
+  
+  }
+  nav li a:hover {
+	border-bottom: 3px solid #406332;
+	padding: 6px 0; 
+  }
+  
