@@ -867,3 +867,9 @@ h1.heading {
     background-attachment: fixed;
 	position:relative!important;
 }
+
+
+.card-img, .card-img-bottom, .card-img-top {
+    max-height: 250px;
+    min-height: 250px;
+}
