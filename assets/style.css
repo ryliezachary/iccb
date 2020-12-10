@@ -873,3 +873,7 @@ h1.heading {
     max-height: 250px;
     min-height: 250px;
 }
+
+.nav-link:focus, .nav-link:hover {
+    text-decoration: underline;
+}
