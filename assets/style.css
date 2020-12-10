@@ -899,7 +899,7 @@ nav li a:active{
 	color: #00000080;
   }
   
-  nav li a.active {
+	a .active {
 	color: #00000080;
   }
   
