@@ -102,7 +102,7 @@ html,body{
 	background: #81c764; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #81c764, #78ffd6); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #81c764, #78ffd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #406332;
+	/* color: #406332; */
 }
 .gradient_inverse {
 	background: #f2f2f2;
@@ -883,7 +883,6 @@ nav li a:active{
 	color: #406332;
 	font-size: 20px;
 	text-decoration: none;
-	border-top: 3px solid transparent;
 	border-bottom: 3px solid transparent;
 	padding: 20px 0;
 	margin: 0 5px;
@@ -899,8 +898,16 @@ nav li a:active{
 	color: #00000080;
   }
   
-	a .active {
+nav li a .active {
 	color: #00000080;
   }
   
-  
+  .dropdown-item.active, .dropdown-item:active {
+    color: #406332;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.partners-logos .slide img {
+    max-width: 60%;
+}
