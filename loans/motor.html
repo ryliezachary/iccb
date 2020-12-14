@@ -13,13 +13,15 @@
     
     <title>ICCB|Motorcycle Loan</title>
     <style>
-        .of {
-            object-fit: cover;
-            /*
-            object-fit: scale-down;
-            object-fit: contain;
-            object-fit: fit;
-            */
+          .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        .containers {
+        position: relative;
+        text-align: center;
         }
     </style>
 </head>
@@ -101,14 +103,10 @@
         </div>
     </div>
     </nav>
-    <div class="container-fluid p-0">
-        <section class="row no-gutters align-items-center">
-            <div class="col-12 text-center d-flex">
-                <img class="img-fluid of" src="https://ryliezachary.github.io/iccb/img/motorloan.png">
-                <h2 class="w-100 position-absolute font-weigth-bold text-white mt-5 mr-5 pr-5">MOTORCYCLE LOAN</h2>
-            </div>
-        </section>
-    </div>
+    <div class="containers">
+        <img src="../img/motorloan.png" style="width:100%;height:250px;">
+       <div class="centered"><h2>MOTORCYCLE LOAN</h2></div>
+</div>
 
     <section class="motorcycle">
         <div class="container pt-5">
